@@ -1,0 +1,161 @@
+.allFooter{
+    margin-top: 60px;
+    position: relative;
+    svg{
+        width: 100%;
+        fill: $backFooter;
+        transform: rotate(180deg);
+        height: 3rem;
+    }
+    .allFooterBlock{
+        background: $backFooter;
+        padding-top: 60px;
+        margin-top: -.5rem;
+        svg{
+            transform: rotate(0);
+        }
+    }
+    .allFooterBtn{
+        position: absolute;
+        top: 2.5rem;
+        right: 0;
+        left: 0;
+        margin-top: -1rem;
+        display: grid;
+        justify-content: center;
+        a{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 5rem;
+            background: $blue;
+            box-shadow: 0 0 1px 6px rgba(78, 209, 249, 0.15);
+            svg{
+                width: 1.3rem;
+                height: 1.3rem;
+                fill: white;
+            }
+        }
+    }
+    .allFooterTop{
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-gap: 7rem;
+        .hooper{
+            height: 15rem;
+            outline: transparent;
+            background: white;
+            width: 10rem;
+            border-radius: .3rem;
+            box-shadow: 0 0 15px rgba(128,128,128,0.1);
+            overflow: hidden;
+            .hooper-list{
+                .hooper-track{
+                    .hooper-slide{
+                        img{
+                            width: 100%;
+                            height: 15rem;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .hooper-indicator{
+                    background: $backFooter;
+                }
+                .hooper-indicator.is-active{
+                    background: $blue;
+                }
+            }
+        }
+        .allFooterTopCats{
+            label{
+                font-size: 15px;
+                line-height: 2;
+                font-weight: 700;
+                color: #313131;
+            }
+            ul{
+                margin-top: 15px;
+                li{
+                    margin-bottom: 14px;
+                    a{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #313131;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }
+        .allFooterTopLogo{
+            .allFooterTopLogoPic{
+                display: grid;
+                justify-content: right;
+                margin-bottom: 1rem;
+                img{
+                    width: 100%;
+                    height: 4rem;
+                    object-fit: contain;
+                }
+            }
+            p{
+                color: #313131;
+                font-size: 13px;
+                line-height: 26px;
+                font-weight: 400;
+            }
+        }
+    }
+    .allFooterBot{
+        margin: auto;
+        margin-top: 2rem;
+        padding: 2rem 0;
+        border-top: 1px solid $border2;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: right;
+        align-items: center;
+        grid-gap: 2rem;
+        span{
+            color: #313131;
+            font-size: 13px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .allFooter{
+        .allFooterTop{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .allFooter{
+        .allFooterTop{
+            grid-template-columns: 1fr;
+            .allFooterTopHooper{
+                display: grid;
+                justify-content: center;
+            }
+            .allFooterTopCats{
+                padding: 0 1rem;
+            }
+            .allFooterTopLogo{
+                padding: 0 1rem;
+            }
+        }
+        .allFooterBot{
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            padding: 1rem;
+        }
+    }
+}

@@ -1,0 +1,487 @@
+.allCategoryPost{
+    margin: auto;
+    margin-top: 2rem;
+    background: $frontBack2;
+    box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .11);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    .allCategories{
+        .allCategoriesRight{
+            position: relative;
+            display: block;
+            .allCategoriesRightTitles{
+                display: grid;
+                grid-template-columns: auto 1fr;
+                padding: 1rem;
+                position: relative;
+                z-index: 50;
+                align-items: center;
+                .allCategoriesRightTitle{
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    justify-content: right;
+                    align-items: center;
+                    grid-gap: .5rem;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    color: $text2;
+                    h3{
+                        color: $textFront;
+                        font-weight: 300;
+                        font-size: 1.3rem;
+                    }
+                }
+                .allCategoryPostTitlesOptions{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(3rem , auto));
+                    justify-content: left;
+                    align-items: center;
+                    grid-gap: .5rem;
+                    .allCategoryPostTitlesOption{
+                        position: relative;
+                        button{
+                            padding: .3rem 1rem;
+                            border-radius: .3rem;
+                            background: white;
+                            color: $text3;
+                            transition: all .3s ease-in-out;
+                            &:hover{
+                                background: #fafafa;
+                                color: $text1;
+                            }
+                        }
+                        .active{
+                            color: white;
+                            background: $blue;
+                            &:hover{
+                                color: white;
+                                background: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+            .allCategoriesRightPosts{
+                display: grid;
+                grid-template-columns: 17rem 1fr;
+                .allCategoriesRightPostsItems{
+                    text-align: left;
+                    height: 100%;
+                    display: grid;
+                    padding: 1rem;
+                    .allCategoriesRightPostsItem{
+                        display: grid;
+                        margin-top: .5rem;
+                        button{
+                            background: $frontBack;
+                            width: 11rem;
+                            margin-top: .5rem;
+                            padding: 1rem;
+                            border-radius: 10px;
+                            .allCategoriesLeftItem{
+                                display: grid;
+                                grid-template-columns: auto 1fr;
+                                align-items: center;
+                                grid-gap: .5rem;
+                                .allCategoriesLeftItemData{
+                                    display: grid;
+                                    grid-template-columns: 1fr auto;
+                                    align-items: center;
+                                    grid-gap: 1rem;
+                                    .allCategoriesLeftItemInfo{
+                                        h3,h5{
+                                            color: $textFront;
+                                            text-align: right;
+                                            font-size: .9rem;
+                                            font-weight: 300;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                        }
+                                        h5{
+                                            opacity: .7;
+                                            font-size: .75rem;
+                                        }
+                                    }
+                                    svg{
+                                        width: 1rem;
+                                        height: 1rem;
+                                        fill: white;
+                                    }
+
+                                }
+                                .allCategoriesLeftItemPic{
+                                    img{
+                                        width: 2.5rem;
+                                        height: 2.5rem;
+                                        border-radius: 5rem;
+                                        object-fit: contain;
+                                        background: white;
+                                    }
+                                }
+                            }
+                        }
+                        .active{
+                            background: $green;
+                            width: 14rem;
+                            .allCategoriesLeftItem {
+                                .allCategoriesLeftItemData {
+                                    .allCategoriesLeftItemInfo {
+                                        h3,h5{
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .hooper{
+                    overflow: hidden;
+                    height: 24rem;
+                    position: relative;
+                    outline: transparent;
+                    display: block;
+                    z-index: 100;
+                    .hooper-navigation.is-rtl{
+                        .hooper-next{
+                            left: -1.2rem;
+                        }
+                        .hooper-prev{
+                            right: -1.2rem;
+                        }
+                        button{
+                            svg{
+                                background: white;
+                                width: 3rem;
+                                height: 5rem;
+                                padding: .3rem;
+                                border-radius: 10px;
+                                box-shadow: 0 0 5px rgba(0,0,0,.05);
+                                fill: $textFront;
+                            }
+                        }
+                    }
+                    .hooper-list{
+                        .hooper-track{
+                            padding-top: 1rem;
+                            padding-right: .5rem;
+                            .hooper-slide{
+                                padding-left: 1rem;
+                                transition: all .3s ease-in-out;
+                                .allCategoryPostItem{
+                                    background: white;
+                                    padding: .5rem;
+                                    border-radius: 10px;
+                                    position: relative;
+                                    box-shadow: rgba(3, 0, 71, 0.09) 0px 0px 3px;
+                                    .offProduct{
+                                        position: absolute;
+                                        top: .5rem;
+                                        right: .5rem;
+                                        .offProductItem{
+                                            position: relative;
+                                            svg{
+                                                width: 2.5rem;
+                                                height: 2.5rem;
+                                                fill: $green;
+                                            }
+                                            div{
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                left: 0;
+                                                bottom: 0;
+                                                display: grid;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 2.5rem;
+                                                height: 2.5rem;
+                                                span{
+                                                    font-size: .9rem;
+                                                    font-weight: 300;
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .allSuggestIndexPostOption{
+                                        padding: .1rem .8rem;
+                                        font-size: .8rem;
+                                        position: absolute;
+                                        top: 1rem;
+                                        left: 1rem;
+                                        border-radius: 5px;
+                                        font-weight: 300;
+                                        margin-right: .5rem;
+                                        letter-spacing: .1px;
+                                        color: #fff;
+                                        background: orange;
+                                        z-index: 100;
+                                    }
+                                    .allCategoryPostItemPic{
+                                        img{
+                                            height: 15rem;
+                                            width: 100%;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                    .allCategoryPostItemSubject{
+                                        background: #fafafa;
+                                        border-radius: 10px;
+                                        padding: .5rem;
+                                        h3{
+                                            font-size: .85rem;
+                                            font-weight: 500;
+                                            color: rgb(95, 95, 95);
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;
+                                            -webkit-box-orient: vertical;
+                                            overflow: hidden;
+                                            height: 2.5rem;
+                                        }
+                                        .allCategoryPostItemPrice{
+                                            display: grid;
+                                            grid-template-columns: 1fr auto;
+                                            margin-top: 1rem;
+                                            h4{
+                                                font-size: 1rem;
+                                                font-weight: 500;
+                                                color: $textFront;
+                                                span{
+                                                    font-size: .7rem;
+                                                    letter-spacing: .1px;
+                                                }
+                                            }
+                                            svg{
+                                                fill: $textFront;
+                                                opacity: .5;
+                                                width: 1.5rem;
+                                                height: 1.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .allCategoryPostsOver{
+        z-index: 100;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        .loader{
+            .lds-roller {
+                display: inline-block;
+                position: relative;
+                width: 80px;
+                height: 80px;
+            }
+            .lds-roller div {
+                animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+                transform-origin: 40px 40px;
+            }
+            .lds-roller div:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #fff;
+                margin: -4px 0 0 -4px;
+            }
+            .lds-roller div:nth-child(1) {
+                animation-delay: -0.036s;
+            }
+            .lds-roller div:nth-child(1):after {
+                top: 63px;
+                left: 63px;
+            }
+            .lds-roller div:nth-child(2) {
+                animation-delay: -0.072s;
+            }
+            .lds-roller div:nth-child(2):after {
+                top: 68px;
+                left: 56px;
+            }
+            .lds-roller div:nth-child(3) {
+                animation-delay: -0.108s;
+            }
+            .lds-roller div:nth-child(3):after {
+                top: 71px;
+                left: 48px;
+            }
+            .lds-roller div:nth-child(4) {
+                animation-delay: -0.144s;
+            }
+            .lds-roller div:nth-child(4):after {
+                top: 72px;
+                left: 40px;
+            }
+            .lds-roller div:nth-child(5) {
+                animation-delay: -0.18s;
+            }
+            .lds-roller div:nth-child(5):after {
+                top: 71px;
+                left: 32px;
+            }
+            .lds-roller div:nth-child(6) {
+                animation-delay: -0.216s;
+            }
+            .lds-roller div:nth-child(6):after {
+                top: 68px;
+                left: 24px;
+            }
+            .lds-roller div:nth-child(7) {
+                animation-delay: -0.252s;
+            }
+            .lds-roller div:nth-child(7):after {
+                top: 63px;
+                left: 17px;
+            }
+            .lds-roller div:nth-child(8) {
+                animation-delay: -0.288s;
+            }
+            .lds-roller div:nth-child(8):after {
+                top: 56px;
+                left: 12px;
+            }
+            @keyframes lds-roller {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .allCategoryPost{
+        .allCategories {
+            .allCategoriesRight {
+                .allCategoriesRightTitles {
+                    grid-template-columns: 1fr;
+                    grid-gap: .5rem;
+                    .allCategoryPostTitlesOptions {
+                        .allCategoryPostTitlesOption {
+                            button {
+                                padding: .3rem;
+                                font-size: .6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .allCategoryPost{
+        .allCategories {
+            .allCategoriesRight {
+                .allCategoriesRightPosts {
+                    grid-template-columns: 1fr;
+                    .allCategoriesRightPostsItems {
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: .5rem;
+                        .allCategoriesRightPostsItem {
+                            button {
+                                width: 100%;
+                                padding: .5rem;
+                                .allCategoriesLeftItemPic{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+                                .allCategoriesLeftItemData{
+                                    display: block;
+                                    .allCategoriesLeftItemInfo{
+                                        h3,h5{
+                                            font-size: .7rem;
+                                        }
+                                        h5{
+                                            opacity: .7;
+                                            font-size: .6rem;
+                                        }
+                                    }
+                                    svg{
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                    }
+
+                                }
+                            }
+                            .active {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .hooper{
+                        height: 17rem;
+                        .hooper-navigation.is-rtl{
+                            button{
+                                svg{
+                                    width: 2rem;
+                                    height: 2rem;
+                                }
+                            }
+                        }
+                        .hooper-list{
+                            .hooper-track{
+                                padding-top: 1rem;
+                                padding-right: 0;
+                                .hooper-slide{
+                                    padding:0 .5rem;
+                                    .allCategoryPostItem{
+                                        .allCategoryPostItemPic{
+                                            img{
+                                                height: 8rem;
+                                            }
+                                        }
+                                        .allCategoryPostItemSubject{
+                                            h3{
+                                                font-size: .65rem;
+                                                height: auto;
+                                            }
+                                            .allCategoryPostItemPrice{
+                                                h4{
+                                                    font-size: .7rem;
+                                                    span{
+                                                        font-size: .6rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

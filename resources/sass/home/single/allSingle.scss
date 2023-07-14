@@ -1,0 +1,1385 @@
+.allSingle{
+    margin: auto;
+    margin-top: 1rem;
+    .allSingleAddress{
+        padding-left: 20px;
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            justify-content: left;
+            align-items: center;
+            li {
+                display: inline;
+                a {
+                    height: 40px;
+                    background: $frontBack2;
+                    text-align: center;
+                    position: relative;
+                    margin: 0 10px 0 0;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-gap: .5rem;
+                    justify-content: right;
+                    padding: 0 2rem;
+                    align-items: center;
+                    transition: all .3s ease-in-out;
+                    text-decoration: none;
+                    h4{
+                        font-weight: 500;
+                        font-size: .9rem;
+                        color: $text3;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                    svg{
+                        width: .9rem;
+                        transition: all .3s ease-in-out;
+                        height: .9rem;
+                        fill: $text3;
+                    }
+                    &::before {
+                        content: "";
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent;
+                        border-right: 20px solid $frontBack2;
+                        position: absolute;
+                        left: -20px;
+                        transition: all .3s ease-in-out;
+                        top: 0;
+                        z-index: 1;
+                    }
+                    &::after {
+                        content: "";
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent;
+                        transition: all .3s ease-in-out;
+                        border-right: 20px solid #fafafa;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .allSingleProduct{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 22rem 1fr;
+        padding: 1rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,.05);
+        .allSingleTopPic{
+            .allSingleHomeInfoTime {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: .5rem;
+                background: #f9f9f9;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+                .allSingleHomeInfoTimeText {
+                    text-align: center;
+                    h4{
+                        font-size: 1rem;
+                        font-weight: 700;
+                        color: $text2;
+                        opacity: .9;
+                        letter-spacing: 1px;
+                    }
+                    h5{
+                        font-size: .8rem;
+                        font-weight: 300;
+                        color: $text2;
+                        opacity: .5;
+                    }
+                }
+                .allSingleHomeInfoTimeItem {
+                    direction: ltr;
+                    .flip-card[data-v-78efe7f6] {
+                        font-size: 1.1rem;
+                    }
+                    .flip-card__top[data-v-78efe7f6], .flip-card__bottom[data-v-78efe7f6], .flip-card__back-bottom[data-v-78efe7f6], .flip-card__back[data-v-78efe7f6]::before, .flip-card__back[data-v-78efe7f6]::after{
+                        padding: 0;
+                    }
+                    .flip-card__top[data-v-78efe7f6], .flip-card__bottom[data-v-78efe7f6], .flip-card__back-bottom[data-v-78efe7f6], .flip-card__back[data-v-78efe7f6]::before, .flip-card__back[data-v-78efe7f6]::after{
+                        background: #fff;
+                        color: $text2;
+                    }
+                    .flip-card__bottom[data-v-78efe7f6], .flip-card__back-bottom[data-v-78efe7f6], .flip-card__bottom-4digits[data-v-78efe7f6], .flip-card__back-bottom-4digits[data-v-78efe7f6]{
+                        background: #fff;
+                        border-top: 0;
+                        color: $text2;
+                    }
+                    .flip-clock__slot[data-v-78efe7f6] {
+                        position: absolute;
+                        top: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+            .allSingleTopImage{
+                position: relative;
+                .zoom-on-hover{
+                    border-radius: .3rem;
+                    img{
+                        width: 22rem;
+                        height: 28rem;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .hooper{
+                overflow: hidden;
+                height: auto;
+                outline: transparent;
+                margin-top: .5rem;
+                .hooper-list{
+                    .hooper-navigation.is-rtl{
+                        button{
+                            svg{
+                                background: white;
+                                border-radius: 100%;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                fill: $text3;
+                            }
+                        }
+                    }
+                    .hooper-track{
+                        .hooper-slide{
+                            cursor: pointer;
+                            padding-right: .5rem;
+                            width: auto;
+                            img{
+                                width: 100%;
+                                height: 6rem;
+                                object-fit: contain;
+                                border-radius: .3rem;
+                                overflow: hidden;
+                            }
+                        }
+                        .hooper-slide.is-active.is-current{
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+            .allSingleTopPicOption{
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                .allSingleTopPicOptionItem{
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+                    svg{
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        fill: #777777;
+                        &:nth-child(2){
+                            position: absolute;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        .allSingleProductSubject{
+            .allSingleProductSubjectTitle{
+                position: relative;
+                overflow: hidden;
+                h1{
+                    padding-right: 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+
+                    span {
+                        padding: .1rem .8rem;
+                        font-size: .8rem;
+                        border-radius: 5px;
+                        font-weight: 300;
+                        margin-right: .5rem;
+                        letter-spacing: .1px;
+                    }
+
+                    .fake {
+                        color: #fff;
+                        background: #FFD300;
+                    }
+
+                    .original {
+                        color: #fff;
+                        background: $green;
+                    }
+
+                    .used {
+                        color: #fff;
+                        background: orange;
+                    }
+                }
+                span{
+                    color: $text3;
+                    font-size: .7rem;
+                    background: white;
+                    position: relative;
+                    font-weight: 300;
+                    padding: 10px;
+                    padding-right: 1rem;
+                    z-index: 10;
+                    line-height: 1.5rem;
+                }
+                &::after{
+                    content: "";
+                    width: 100%;
+                    left: 0;
+                    bottom: .6rem;
+                    margin-left: 20rem;
+                    height: .08rem;
+                    background: $border2;
+                    position: absolute;
+                }
+            }
+            .allSingleTopSubjectItems{
+                display: grid;
+                grid-template-columns: repeat(auto-fit , minmax(2px , auto));
+                justify-content: right;
+                align-items: center;
+                grid-gap: 1.5rem;
+                margin-top: .5rem;
+                padding: 0 1rem;
+                .allSingleTopSubjectInfo{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    justify-content: right;
+                    align-items: center;
+                    grid-gap: .5rem;
+                    i{
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        svg{
+                            width: .85rem;
+                            height: .85rem;
+                            fill: $text3;
+                        }
+                    }
+                    span{
+                        font-size: .75rem;
+                        line-height: 1.692;
+                        font-weight: 400;
+                        color: $text3;
+                    }
+                }
+            }
+            .allSingleProductSubjectItems{
+                display: grid;
+                grid-template-columns: 1fr auto;
+                .allSingleProductSubjectItem{
+                    padding: 1rem;
+                    .allSingleProductSubjectOptions{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-gap: 10px;
+                        .allSingleProductSubjectOption{
+                            .allCategoryPanel{
+                                position: relative;
+                                width: 10rem;
+                                margin-top: .5rem;
+                                .categoryShow{
+                                    border: 1.4px solid $border1;
+                                    display: grid;
+                                    grid-template-columns: 1fr auto;
+                                    padding: .4rem .5rem .4rem 1rem;
+                                    border-radius: .3rem;
+                                    cursor: pointer;
+                                    h4{
+                                        color: $text3;
+                                        font-size: .8rem;
+                                        font-weight: 400;
+                                    }
+                                    i{
+                                        display: grid;
+                                        justify-content: center;
+                                        align-items: center;
+                                        svg{
+                                            width: 0.8rem;
+                                            height: 0.8rem;
+                                            fill: $text2;
+                                        }
+                                    }
+                                }
+                                ul{
+                                    position: absolute;
+                                    top: 94%;
+                                    right: 0;
+                                    width: 100%;
+                                    background: white;
+                                    border-radius: .3rem;
+                                    height: 10rem;
+                                    direction: ltr;
+                                    overflow: hidden;
+                                    border: 1.4px solid $border1;
+                                    z-index: 80;
+                                    display: block;
+                                    .scroll-area {
+                                        position: relative;
+                                        margin: auto;
+                                        width: 100%;
+                                        height: 10rem;
+                                    }
+                                    li{
+                                        direction: rtl;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        padding: .4rem;
+                                        padding-right: .5rem;
+                                        color: $text3;
+                                        font-size: .75rem;
+                                        font-weight: 300;
+                                        cursor: pointer;
+                                        transition: all .3s ease-in-out;
+                                        &:hover{
+                                            background: $frontBack2;
+                                        }
+                                    }
+                                }
+                            }
+                            .allSingleProductSubjectOptionTitle{
+                                font-size: .85rem;
+                                margin-top: 10px;
+                                font-weight: 400;
+                                color: $text2;
+                            }
+                            ul{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-gap: .5rem;
+                                margin-top: 10px;
+                                li{
+                                    display: grid;
+                                    grid-template-columns: repeat(2,auto);
+                                    align-items: center;
+                                    grid-gap: .5rem;
+                                    justify-content: right;
+                                    font-size: .75rem;
+                                    font-weight: 300;
+                                    color: $text3;
+                                    svg{
+                                        width: .9rem;
+                                        height: .9rem;
+                                        fill: $green;
+                                    }
+                                }
+                            }
+                            &:last-child{
+                                margin: .5rem 0;
+                            }
+                            .swatch input {
+                                display: none
+                            }
+                            .swatch .swatch-element {
+                                float: right;
+                                margin: 5px 8px 0 0;
+                                position: relative
+                            }
+                            .swatch .color label {
+                                -moz-transition: all 0.3s ease-in-out;
+                                -o-transition: all 0.3s ease-in-out;
+                                -webkit-transition: all 0.3s ease-in-out;
+                                transition: all 0.3s ease-in-out;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                border-radius: 50%;
+                                border: 1px solid;
+                                cursor: pointer;
+                                height: 42px;
+                                display: grid;
+                                align-items: center;
+                                justify-content: center;
+                                width: 42px
+                            }
+                            .swatch .color label span {
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                border-radius: 50%;
+                                display: block;
+                                height: 26px;
+                                position: relative;
+                                width: 26px
+                            }
+                            .swatch .color label span:after {
+                                -moz-transition: all 0.3s ease-in-out;
+                                -o-transition: all 0.3s ease-in-out;
+                                -webkit-transition: all 0.3s ease-in-out;
+                                transition: all 0.3s ease-in-out;
+                                background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEycHgiIGhlaWdodD0iOXB4IiB2aWV3Qm94PSIwIDAgMTIgOSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTIzMS4wMDAwMDAsIC0xMzAyLjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiPgogICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMy4wMDAwMDAsIDEyNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTIzNS45MzgzNyw1OC40NTA1ODYxIEwxMjM0LjUyMTE2LDU5LjM5NTUzMDcgTDEyMzcuNTQ4NDgsNjMuOTM2NzE1OCBMMTI0NS45MjIyNSw1OC4zNTM5MTk4IEwxMjQ0Ljk3NzczLDU2LjkzNjcxNTggTDEyMzguMDIxMTYsNjEuNTc0NTY3MSBMMTIzNS45MzgzNyw1OC40NTA1ODYxIEwxMjM1LjkzODM3LDU4LjQ1MDU4NjEgWiIgaWQ9ImZhamZrYSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI0MC4yMjE3MDYsIDYwLjQzNjcxNikgcm90YXRlKC0xMC4wMDAwMDApIHRyYW5zbGF0ZSgtMTI0MC4yMjE3MDYsIC02MC40MzY3MTYpIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==') no-repeat center center;
+                                bottom: 0;
+                                content: "";
+                                display: block;
+                                height: 100%;
+                                left: 0;
+                                opacity: 0;
+                                position: absolute;
+                                top: 0;
+                                width: 100%
+                            }
+                            .swatch .color input:checked+label span:after {
+                                opacity: 1
+                            }
+                            .swatch input:not(:checked)+label {
+                                border-color: #edeff2 !important
+                            }
+                            .crossed-out {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                left: 0;
+                                top: 0
+                            }
+                            .swatch .tooltip {
+                                -moz-border-radius: 2px;
+                                -webkit-border-radius: 2px;
+                                border-radius: 2px;
+                                text-align: center;
+                                background-color: rgba(22, 22, 26, 0.93);
+                                color: #fff;
+                                bottom: 100%;
+                                padding: 10px;
+                                display: block;
+                                position: absolute;
+                                width: 100px;
+                                left: -23px;
+                                margin-bottom: 15px;
+                                filter: alpha(opacity=0);
+                                -khtml-opacity: 0;
+                                -moz-opacity: 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                -webkit-transform: translateY(10px);
+                                -moz-transform: translateY(10px);
+                                -ms-transform: translateY(10px);
+                                -o-transform: translateY(10px);
+                                transform: translateY(10px);
+                                -webkit-transition: all .25s ease-out;
+                                -moz-transition: all .25s ease-out;
+                                -ms-transition: all .25s ease-out;
+                                -o-transition: all .25s ease-out;
+                                transition: all .25s ease-out;
+                                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                                -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                                -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                                -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                                z-index: 10000;
+                                -moz-box-sizing: border-box;
+                                -webkit-box-sizing: border-box;
+                                box-sizing: border-box
+                            }
+                            .swatch .tooltip:before {
+                                bottom: -20px;
+                                content: " ";
+                                display: block;
+                                height: 20px;
+                                left: 0;
+                                position: absolute;
+                                width: 100%
+                            }
+                            .swatch .tooltip:after {
+                                border-left: solid transparent 10px;
+                                border-right: solid transparent 10px;
+                                border-top: solid rgba(22, 22, 26, 0.93) 10px;
+                                bottom: -10px;
+                                content: " ";
+                                height: 0;
+                                left: 50%;
+                                margin-left: -13px;
+                                position: absolute;
+                                width: 0
+                            }
+                            .swatch .swatch-element:hover .tooltip {
+                                filter: alpha(opacity=100);
+                                -khtml-opacity: 1;
+                                -moz-opacity: 1;
+                                opacity: 1;
+                                visibility: visible;
+                                -webkit-transform: translateY(0px);
+                                -moz-transform: translateY(0px);
+                                -ms-transform: translateY(0px);
+                                -o-transform: translateY(0px);
+                                transform: translateY(0px)
+                            }
+                        }
+                        .allSingleProductSubjectTaxes{
+                            .allSingleProductSubjectTax{
+                                display: grid;
+                                grid-template-columns: auto 1fr;
+                                grid-gap: .5rem;
+                                align-items: center;
+                                label{
+                                    font-size: .85rem;
+                                    font-weight: 400;
+                                    color: $text2;
+                                }
+                                ul{
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fit , minmax(1px , auto));
+                                    justify-content: right;
+                                    align-items: center;
+                                    grid-gap: 1rem;
+                                    li{
+                                        a{
+                                            border-bottom: 1px dashed $blue;
+                                            color: $blue;
+                                            transition: all .3s ease-in-out;
+                                            &:hover{
+                                                border-bottom: 1px dashed $text4;
+                                                color: $text4;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .allSingleProductSubjectTax{
+                        margin-top: 20px;
+                        .allSingleProductSubjectTaxItems{
+                            padding: 1rem;
+                        }
+                    }
+                }
+                .allSingleProductDetail{
+                    background: url("/img/singleBack.jpg");
+                    border-radius: 10px;
+                    border: 1px solid $border1;
+                    width: 20rem;
+                    position: sticky;
+                    top: 5rem;
+                    &:before{
+                        background: white;
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        opacity: .9;
+                        z-index: 1;
+                        border-radius: 10px;
+                    }
+                    .allSingleTopDetailItem{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        justify-content: right;
+                        align-items: center;
+                        grid-gap: 1rem;
+                        padding: 1rem;
+                        border-bottom: .5px solid $border1;
+                        position: relative;
+                        z-index: 10;
+                        span{
+                            font-size: .85rem;
+                            font-weight: 300;
+                            color: $text4;
+                        }
+                        svg{
+                            width: 1.3rem;
+                            height: 1.3rem;
+                            fill: $text2;
+                        }
+                    }
+                    .allSingleTopDetailItemPrice{
+                        padding: 1rem;
+                        position: relative;
+                        z-index: 10;
+                        s{
+                            font-size: .8rem;
+                            color: $text3;
+                            font-weight: 300;
+                        }
+                        span{
+                            background: $red;
+                            padding: .2rem 1rem;
+                            color: white;
+                            font-size: .75rem;
+                            border-radius: 1rem;
+                        }
+                        h3{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: left;
+                            align-items: center;
+                            grid-gap: .5rem;
+                            color: $text4;
+                            margin-top: 1rem;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            text-align: left;
+                            h5{
+                                font-size: .9rem;
+                                font-weight: 300;
+                                color: $text3;
+                                letter-spacing: .01px;
+                            }
+                        }
+                        button{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: center;
+                            align-items: center;
+                            grid-gap: .5rem;
+                            margin-top: 1rem;
+                            width: 100%;
+                            border-radius: .3rem;
+                            color: $green;
+                            padding: .5rem;
+                            font-size: .9rem;
+                            border: 1px solid $green;
+                            background: white;
+                            transition: all .3s ease-in-out;
+                            svg{
+                                width: 1.2rem;
+                                height: 1.2rem;
+                                fill: $green;
+                                transition: all .3s ease-in-out;
+                            }
+                            &:hover{
+                                background: $green;
+                                color: white;
+                                svg{
+                                    fill: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .allSingleRell{
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 10px;
+        overflow: hidden;
+        background: $frontBack2;
+        box-shadow: 0 0 10px rgba(0,0,0,.05);
+        padding-left: 1rem;
+        .allHooperItemsTitle{
+            z-index: 10;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            padding-right: 1rem;
+            h3{
+                padding: 1rem;
+                color: $textFront;
+                font-size: 1.1rem;
+                font-weight: 500;
+                border-bottom: 2px solid $blue3;
+                height: 4rem;
+            }
+            .allHooperItemsTitleBlock{
+                padding: 1rem;
+                border-bottom: 2px solid $border1;
+                height: 4rem;
+            }
+        }
+        .hooper{
+            overflow: hidden;
+            min-height: 26rem;
+            outline: transparent;
+            margin-top: 1rem;
+            display: grid;
+            .hooper-list{
+                .hooper-track{
+                    .hooper-slide{
+                        padding-right: 1rem;
+                        .allSuggestIndexPost{
+                            border: 1px solid #f1f1f1;
+                            padding: .5rem;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            position: relative;
+                            .offProduct{
+                                position: absolute;
+                                top: .5rem;
+                                right: .5rem;
+                                z-index: 10;
+                                .offProductItem{
+                                    position: relative;
+                                    svg{
+                                        width: 2.5rem;
+                                        height: 2.5rem;
+                                        fill: $green;
+                                    }
+                                    div{
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        display: grid;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 2.5rem;
+                                        height: 2.5rem;
+                                        span{
+                                            font-size: .9rem;
+                                            font-weight: 300;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                            .allSuggestIndexPostPic{
+                                position: relative;
+                                padding: 0 1rem;
+                                img{
+                                    width: 100%;
+                                    height: 15rem;
+                                    object-fit: contain;
+                                    transition: all .6s ease-in-out;
+                                    padding-top: 1rem;
+                                    &:nth-child(2){
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                            h3{
+                                height: 2.5rem;
+                                color: $textFront;
+                                font-weight: 300;
+                                font-size: .8rem;
+                                margin: 1rem 0;
+                                display: -webkit-box;
+                                overflow: hidden;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                opacity: .7;
+                            }
+                            .allSurprisingSubjectPrice{
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                height: 2.5rem;
+                                s{
+                                    font-size: .7rem;
+                                    font-weight: 300;
+                                    color: $text3;
+                                    text-align: left;
+                                }
+                                h4{
+                                    display: grid;
+                                    justify-content: left;
+                                    grid-template-columns: auto auto;
+                                    align-items: center;
+                                    grid-gap: .5rem;
+                                    font-size: 1rem;
+                                    font-weight: 300;
+                                    color: $textFront;
+                                    span{
+                                        font-size: .75rem;
+                                    }
+                                }
+                            }
+                            .allSuggestIndexPostOptions{
+                                display: grid;
+                                grid-template-columns: auto auto;
+                                justify-content: right;
+                                grid-gap: 1rem;
+                                align-items: center;
+                                margin-top: 1rem;
+                                .allSuggestIndexPostOption{
+                                    svg{
+                                        width: 1rem;
+                                        height: 1rem;
+                                        fill: $text3;
+                                        &:nth-child(2){
+                                            visibility: hidden;
+                                            position: absolute;
+                                            top: 10rem;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover{
+                                img{
+                                    &:nth-child(1){
+                                        bottom: 0;
+                                        right: 0;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        position: absolute;
+                                    }
+                                    &:nth-child(2){
+                                        position: relative;
+                                        bottom: auto;
+                                        visibility: visible;
+                                        opacity: 1;
+                                        right: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .allSingleData{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 1rem;
+        margin-top: 1rem;
+        .allSingleDescription{
+            background: $frontBack2;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,.05);
+            .allSingleDescriptionTitles{
+                display: grid;
+                grid-template-columns: 1fr auto;
+                border-bottom: 0;
+                overflow: hidden;
+                .allSingleDescriptionTitle{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit , minmax(1px , auto));
+                    justify-content: right;
+                    align-items: center;
+                    .allSingleDescriptionTitleItems{
+                        div{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: right;
+                            align-items: center;
+                            grid-gap: .5rem;
+                            padding: 1rem;
+                            cursor: pointer;
+                            i{
+                                display: grid;
+                                align-items: center;
+                                justify-content: center;
+                                svg{
+                                    width: 1.3rem;
+                                    height: 1.3rem;
+                                    fill: $text3;
+                                }
+                            }
+                            span{
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: $text3;
+                            }
+                        }
+                        .active{
+                            background: white;
+                            span,svg{
+                                color: $text2;
+                                fill: $text2;
+                            }
+                        }
+                    }
+                }
+                .allSingleDescriptionButtons{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-gap: 1rem;
+                    align-items: center;
+                    padding: 0 1rem;
+                    i{
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        background: #fafafa;
+                        padding: .5rem 1rem;
+                        border-radius: 5px;
+                        svg{
+                            width: .85rem;
+                            height: .85rem;
+                            fill: $textFront;
+                        }
+                    }
+                }
+            }
+            .allSingleDetailContainer{
+                background: white;
+                padding: 1rem;
+                .allSingleDetailContainerItem{
+                    .allSingleDetailContainerItemBody{
+                        margin-top: 1rem;
+                        background: #F2F4F4;
+                        padding: 2rem;
+                        border-radius: 10px;
+                        p{
+                            font-size: 1rem;
+                            font-weight: 300;
+                            color: $text2;
+                            line-height: 2.25;
+                        }
+                    }
+                    label{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: $text3;
+                    }
+                    &:last-child{
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            .allSingleDetailProperties{
+                padding: 1rem;
+                background: white;
+                label{
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: $text3;
+                }
+                ul{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 1rem;
+                    margin-top: 1rem;
+                    li{
+                        display: grid;
+                        grid-template-columns: 20rem 1fr;
+                        grid-gap: .5rem;
+                        h3{
+                            background: $back2;
+                            padding: .5rem;
+                            font-size: .8rem;
+                            line-height: 1.692;
+                            color: $text2;
+                            letter-spacing: -.3px;
+                            font-weight: 500;
+                            border-radius: .3rem;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        p{
+                            background: $back2;
+                            padding: .5rem;
+                            font-size: .8rem;
+                            line-height: 1.692;
+                            color: $text2;
+                            letter-spacing: -.3px;
+                            font-weight: 300;
+                            border-radius: .3rem;
+                        }
+                    }
+                }
+            }
+            .allSingleDescriptionComment{
+                background: white;
+                padding: 1rem;
+            }
+        }
+        .allSingleDataShops{
+            .allSingleDataShop{
+                width: 300px;
+                background: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 10px rgba(0,0,0,.05);
+                padding: 1rem;
+                position: sticky;
+                top: 8.5rem;
+                .allSingleDataShopTop{
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    grid-gap: .5rem;
+                    border-bottom: 1px solid $border1;
+                    padding-bottom: .5rem;
+                    img{
+                        width: 5rem;
+                        height: 7rem;
+                        object-fit: contain;
+                    }
+                    .allSingleDataShopTitle{
+                        h3,h4{
+                            font-size: .8rem;
+                            font-weight: 300;
+                            color: $text1;
+                        }
+                        h4{
+                            letter-spacing: .1px;
+                            opacity: .7;
+                        }
+                    }
+                }
+                .allSingleShopDetail{
+                    display: grid;
+                    align-items: center;
+                    .allSingleShopDetailItem{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        justify-content: right;
+                        align-items: center;
+                        grid-gap: .5rem;
+                        margin-top: 1rem;
+                        svg{
+                            width: 1rem;
+                            height: 1rem;
+                            fill: $text1;
+                        }
+                        span{
+                            font-size: .8rem;
+                            font-weight: 300;
+                            color: $text1;
+                        }
+                    }
+                    .allSingleShopDetailPrice{
+                        margin-top: 1rem;
+                        text-align: left;
+                        s{
+                            font-size: .8rem;
+                            color: $text3;
+                            font-weight: 300;
+                        }
+                        span{
+                            background: $red;
+                            padding: .2rem 1rem;
+                            color: white;
+                            font-size: .75rem;
+                            border-radius: 1rem;
+                        }
+                        h3{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: left;
+                            align-items: center;
+                            grid-gap: .5rem;
+                            color: $text4;
+                            margin-top: 1rem;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            text-align: left;
+                            h5{
+                                font-size: .9rem;
+                                font-weight: 300;
+                                color: $text3;
+                                letter-spacing: .01px;
+                            }
+                        }
+                        button{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: center;
+                            align-items: center;
+                            grid-gap: .5rem;
+                            margin-top: 1rem;
+                            width: 100%;
+                            border-radius: .3rem;
+                            color: $green;
+                            padding: .5rem;
+                            font-size: .9rem;
+                            border: 1px solid $green;
+                            background: white;
+                            transition: all .3s ease-in-out;
+                            svg{
+                                width: 1.2rem;
+                                height: 1.2rem;
+                                fill: $green;
+                                transition: all .3s ease-in-out;
+                            }
+                            &:hover{
+                                background: $green;
+                                color: white;
+                                svg{
+                                    fill: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .showAllShare{
+        background: rgba(0,0,0,.5);
+        z-index: 4000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        .showAllShareHome{
+            width: 40%;
+            margin: auto;
+            background: #EEF5F9;
+            display: grid;
+            grid-template-columns: 1fr;
+            border-radius: .4rem;
+            overflow: hidden;
+            .showAllShareTop{
+                display: grid;
+                grid-template-columns: 1fr auto;
+                background: #F5F5F5;
+                border-bottom: 2px solid #d5dadd;
+                i{
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+                    cursor: pointer;
+                    svg{
+                        fill: #6f6f6f;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                    }
+                }
+                span{
+                    font-size: .8rem;
+                    font-weight: 400;
+                    padding: 1rem;
+                    color: #6f6f6f;
+                }
+            }
+            .showAllShareItems{
+                display: grid;
+                grid-template-columns: repeat(auto-fit , minmax(2px , auto));
+                justify-content: center;
+                align-items: center;
+                grid-gap: 2rem;
+                background: white;
+                padding: 1rem 0;
+                .showAllShareItem{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: .4rem;
+                    text-align: center;
+                    span{
+                        font-size: .8rem;
+                        font-weight: 300;
+                    }
+                    a{
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 5rem;
+                        i{
+                            font-size: 1.1rem;
+                            color: #fff;
+                        }
+                    }
+                    &:nth-child(1){
+                        a{
+                            background: #4DCCEB;
+                        }
+                        i{
+                            display: grid;
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                width: 1.3rem;
+                                height: 1.3rem;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        a{
+                            background: #3FADE4;
+                        }
+                        i{
+                            display: grid;
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                fill: white;
+                                width: 1.3rem;
+                                height: 1.3rem;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        a{
+                            background: #3A589B;
+                        }
+                        i{
+                            fill: white;
+                            display: grid;
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                width: 1.3rem;
+                                height: 1.3rem;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            background: #25D366;
+                        }
+                        i{
+                            fill: white;
+                            display: grid;
+                            justify-content: center;
+                            align-items: center;
+                            svg{
+                                width: 1.3rem;
+                                height: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .showAllShareTag{
+                display: grid;
+                grid-template-columns: auto auto;
+                align-items: center;
+                justify-content: left;
+                direction: ltr;
+                grid-gap: .5rem;
+                background: #F5F5F5;
+                padding: 1rem;
+                i{
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    svg{
+                        fill: #a9a9a9;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                    }
+                }
+                span{
+                    color: #a9a9a9;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .allSingle{
+        .allSingleAddress{
+            ul {
+                li {
+                    a {
+                        margin: 0 5px 0 0;
+                        padding: 0 1rem;
+                        h4{
+                            font-size: .6rem;
+                        }
+                        svg{
+                            position: absolute;
+                            top: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        .allSingleProduct{
+            grid-template-columns: 18rem 1fr;
+            .allSingleProductSubject{
+                .allSingleProductSubjectItems{
+                    grid-template-columns: 1fr;
+                    .allSingleProductDetail{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .allSingleData{
+            grid-template-columns: 1fr;
+            .allSingleDescription {
+                .allSingleDescriptionTitles {
+                    grid-template-columns: 1fr;
+                    .allSingleDescriptionButtons{
+                        position: absolute;
+                        top: 0;
+                        visibility: hidden;
+                    }
+                }
+                .allSingleDetailProperties{
+                    ul{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-gap: 1rem;
+                        margin-top: 1rem;
+                        li{
+                            display: grid;
+                            grid-template-columns: 5rem 1fr;
+                            grid-gap: .5rem;
+                            h3{
+                                background: $back2;
+                                padding: .5rem;
+                                font-size: .5rem;
+                                line-height: 1.692;
+                                color: $text2;
+                                letter-spacing: -.3px;
+                                font-weight: 500;
+                                border-radius: .3rem;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                            p{
+                                background: $back2;
+                                padding: .5rem;
+                                font-size: .5rem;
+                                line-height: 1.692;
+                                color: $text2;
+                                letter-spacing: -.3px;
+                                font-weight: 300;
+                                border-radius: .3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .allSingleDataShop{
+                position: absolute;
+                top: 0;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .allSingle{
+        .allSingleProduct{
+            grid-template-columns: 1fr;
+        }
+        .allSingleData{
+            .allSingleDescription {
+                .allSingleDescriptionTitles {
+                    .allSingleDescriptionTitle {
+                        .allSingleDescriptionTitleItems{
+                            div{
+                                i{
+                                    svg{
+                                        width: 1rem;
+                                        height: 1rem;
+                                    }
+                                }
+                                span{
+                                    font-size: .7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

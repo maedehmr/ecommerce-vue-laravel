@@ -1,0 +1,234 @@
+.allPackSingle{
+    .allPackSingleTop{
+        background: url('/img/packShop.jpg');
+        background-size: cover;
+        height: 15rem;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .allPackSingleTopBlock{
+            position: relative;
+            z-index: 20;
+            width: 96%;
+            margin: auto;
+            text-align: center;
+            padding-top: 4rem;
+            h1{
+                font-size: 1.6rem;
+                font-weight: 300;
+                color: white;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 300;
+                color: white;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .allPackSingleTopBlockInfo{
+        background: $frontBack2;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -2rem;
+        box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .11);
+        position: relative;
+        z-index: 20;
+        .allPackSingleTopBlockInfoItem{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: right;
+            align-items: center;
+            grid-gap: 1rem;
+            h3{
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: $textFront;
+                span{
+                    font-weight: 300;
+                    letter-spacing: .1px;
+                    font-size: .8rem;
+                    opacity: .7;
+                }
+            }
+            button{
+                background: $green;
+                padding: .3rem 1rem;
+                color: white;
+                font-size: 1rem;
+                font-weight: 300;
+                border-radius: 10px;
+            }
+        }
+        h4{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: right;
+            align-items: center;
+            grid-gap: .5rem;
+            background: #f1f1f1;
+            padding: .2rem 1rem;
+            border-radius: 5px;
+            color: $textFront;
+            font-size: .9rem;
+            font-weight: 300;
+            svg{
+                width: 1rem;
+                height: 1rem;
+                fill: $textFront;
+                opacity: .7;
+            }
+        }
+    }
+    .allPackSinglePosts{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(15rem , 1fr));
+        grid-gap: 1rem;
+        margin: 1rem auto;
+        .allPackSinglePost{
+            .allHoopersPost{
+                border-radius: 10px;
+                position: relative;
+                padding: 1rem;
+                position: relative;
+                background: white;
+                .offProduct{
+                    position: absolute;
+                    top: .5rem;
+                    z-index: 10;
+                    right: .5rem;
+                    .offProductItem{
+                        position: relative;
+                        svg{
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            fill: $green;
+                        }
+                        div{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            display: grid;
+                            justify-content: center;
+                            align-items: center;
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            span{
+                                font-size: .9rem;
+                                font-weight: 300;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                h3{
+                    font-size: .8rem;
+                    font-weight: 300;
+                    color: $textFront;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                    height: 2.6rem;
+                }
+                .allHoopersPostPic{
+                    img{
+                        width: 100%;
+                        height: 15rem;
+                        object-fit: contain;
+                    }
+                }
+                .allHoopersPostData{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    justify-content: space-between;
+                    align-items: center;
+                    grid-gap: 1rem;
+                    margin-top: 1rem;
+                    h4{
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        grid-gap: .5rem;
+                        font-size: .9rem;
+                        font-weight: 300;
+                        background: $frontBack3;
+                        padding: .5rem;
+                        border-radius: 5rem;
+                        color: $text3;
+                        width: 2rem;
+                        transition: all .3s ease-in-out;
+                        svg{
+                            width: 1rem;
+                            height: 1rem;
+                            fill: $text3;
+                        }
+                        span{
+                            transition: all .3s ease-in-out;
+                            position: absolute;
+                            left: 100rem;
+                            opacity: 0;
+                            width: 0;
+                            font-size: .75rem;
+                            overflow: hidden;
+                        }
+                    }
+                    .allHoopersPostDataPrice{
+                        h6{
+                            font-size: .7rem;
+                            font-weight: 300;
+                            color: $text3;
+                            text-align: left;
+                        }
+                        h5{
+                            font-size: 1.1rem;
+                            font-weight: 500;
+                            color: $textFront;
+                            text-align: left;
+                        }
+                    }
+                }
+                &:hover{
+                    .allHoopersPostData{
+                        h4{
+                            grid-template-columns: auto auto;
+                            width: 5rem;
+                            span{
+                                opacity: 1;
+                                position: relative;
+                                width: 100%;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .allPackSingle{
+        .allPackSingleTopBlockInfo{
+            .allPackSingleTopBlockInfoItem{
+                grid-template-columns: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,318 @@
+.allSearchAdvance{
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    grid-gap: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    .allSearchAdvanceRight{
+        .allSearchAdvanceRightSearch{
+            border-radius: 10px;
+            background: $frontBack2;
+            box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .11);
+            .allSearchAdvanceRightTitle{
+                border-bottom: 2px solid $blue;
+                label{
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    overflow: hidden;
+                    align-items: center;
+                    padding: 1rem;
+                    cursor: text;
+                    input{
+                        background: transparent;
+                        font-size: .8rem;
+                        color: $text3;
+                        font-weight: 400;
+                        padding-right: 1rem;
+                    }
+                    svg{
+                        width: 1.5rem;
+                        fill: $text3;
+                        height: 1.5rem;
+                    }
+                    &:focus-within{
+                        svg{
+                            fill: $blue;
+                        }
+                    }
+                }
+            }
+            .allSearchAdvanceRightContainer{
+                padding: 1rem;
+                .allSearchAdvanceRightContainerTitle{
+                    color: $text2;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-right: .5rem;
+                    margin-bottom: 1rem;
+                }
+                .allSearchAdvanceRightContainerItems{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+                    align-items: center;
+                    grid-gap: 1rem;
+                    margin-top: 1rem;
+                    .allSearchAdvanceRightContainerItem{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-gap: .5rem;
+                        margin-bottom: 1rem;
+                        text-align: right;
+                        .allHeaderIndexInput{
+                            border: 1.5px solid $border1;
+                            height: 2.5rem;
+                            border-radius: .3rem;
+                            position: relative;
+                            margin-top: .5rem;
+                            input{
+                                padding: 0 .5rem;
+                                direction: ltr;
+                                text-align: right;
+                                color: $text1;
+                                font-weight: 300;
+                                width: 100%;
+                                font-size: .9rem;
+                                height: 2.3rem;
+                                border-radius: .3rem;
+                            }
+                            span{
+                                position: absolute;
+                                right: .5rem;
+                                top: .5rem;
+                                background: white;
+                                color: $text1;
+                                font-weight: 300;
+                                font-size: .8rem;
+                                padding: 0 .5rem;
+                                transition: all .3s ease-in-out;
+                                cursor: text;
+                            }
+                            .start{
+                                font-size: .65rem;
+                                right: .5rem;
+                                top: -.7rem;
+                            }
+                            .allCategoryPanel{
+                                cursor: pointer;
+                            }
+                            ul{
+                                position: absolute;
+                                top: 110%;
+                                border-top: 3px solid $blue2;
+                                background: white;
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                width: 100%;
+                                right: 0;
+                                z-index: 200;
+                                box-shadow: 0 0 10px rgba(0,0,0,.1);
+                                direction: ltr;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: -10px;
+                                    right: 15px;
+                                    border-style: solid;
+                                    border-width: 0 10px 10px 10px;
+                                    border-color: transparent transparent $blue2 transparent;
+                                }
+                                .ps {
+                                    position: relative;
+                                    margin: auto;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    height: 15rem;
+                                }
+                                li{
+                                    padding: 0.5rem;
+                                    cursor: pointer;
+                                    transition: all .3s ease-in-out;
+                                    padding-right: 1rem;
+                                    &:hover{
+                                        background: $blue2;
+                                        color: white;
+                                    }
+                                }
+                            }
+                            &:focus-within{
+                                border:1.4px solid $green;
+                                box-shadow: 0 3px 8px 0 rgba(0,0,0,.1);
+                            }
+                        }
+                    }
+                }
+                .allSearchAdvanceRightContainerItemsButton{
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    grid-gap: 1rem;
+                    align-items: center;
+                    margin-top: 1rem;
+                    .allSearchAdvanceRightContainerButtonItem{
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        justify-content: right;
+                        align-items: center;
+                        grid-gap: 1rem;
+                        button{
+                            padding: .3rem .8rem;
+                            background-color: #FF5B5C;
+                            border-radius: .3rem;
+                            color: #FFFFFF;
+                            transition: all .3s ease-in-out;
+                            font-size: .8rem;
+                            &:hover{
+                                background-color: $red;
+                            }
+                        }
+                        a{
+                            padding: .3rem .8rem;
+                            border-radius: .3rem;
+                            color: #FFFFFF;
+                            transition: all .3s ease-in-out;
+                            font-size: .8rem;
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: right;
+                            align-items: center;
+                            grid-gap: .5rem;
+                            box-shadow: 0 2px 4px 0 rgba(90, 141, 238, 0.5);
+                            background-color: $blue;
+                            &:hover{
+                                background-color: $blue2;
+                            }
+                            img{
+                                width: 1rem;
+                                height: 1rem;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    h4{
+                        font-size: .8rem;
+                        color: $text2;
+                        span{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+        .allSearchAdvanceRightPic{
+            margin-top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .11);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .allSearchAdvanceLeft{
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 12px 12px 0 hsla(0, 0%, 71%, .11);
+        .hooper{
+            overflow: hidden;
+            height: auto;
+            .hooper-list{
+                .hooper-track{
+                    .hooper-slide{
+                        padding: 1rem;
+                        border-radius: .3rem;
+                        .allSearchAdvanceLeftTitle{
+                            text-align: center;
+                            font-size: 1rem;
+                            font-weight: 300;
+                            color: #6e6e6e;
+                            margin-bottom: 13px;
+                            position: relative;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            padding-bottom: 1rem;
+                            &:before{
+                                height: 1px;
+                                background: #f5f5f5;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                content: "";
+                                box-sizing: inherit;
+                            }
+                            &:after{
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 0;
+                                height: 2px;
+                                background: -webkit-gradient(linear,left top,right top,from(white),to($green));
+                                background: linear-gradient(90deg, white, $green);
+                                content: "";
+                                transition: all 11s ease-in-out;
+                            }
+                        }
+                        .allSearchAdvanceLeftPic{
+                            margin-top: 3rem;
+                            img{
+                                width: 100%;
+                                height: 14rem;
+                                object-fit: contain;
+                            }
+                        }
+                        .allSearchAdvanceLeftSubject{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            a{
+                                text-align: right;
+                                max-width: 90%;
+                                margin: auto;
+                                font-size: .9rem;
+                                line-height: 25px;
+                                color: $text4;
+                                opacity: .7;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                                font-weight: 300;
+                                height: 3rem;
+                                margin-top: 2rem;
+                            }
+                            h4{
+                                text-align: left;
+                                width: 100%;
+                                color: $textFront;
+                                font-weight: 300;
+                                font-size: 1.1rem;
+                                line-height: 1.5;
+                                margin-top: 1.5rem;
+                                span{
+                                    letter-spacing: .1px;
+                                    font-size: .7rem;
+                                    opacity: .7;
+                                }
+                            }
+                        }
+                    }
+                    .hooper-slide.is-active.is-current{
+                        .allSearchAdvanceLeftTitle{
+                            &:after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .allSearchAdvance{
+        grid-template-columns: 1fr;
+    }
+}

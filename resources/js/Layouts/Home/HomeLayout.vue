@@ -10,17 +10,14 @@
 </template>
 
 <script>
-import FooterIndex from '../../Pages/Home/Footer/FooterIndex.vue';
-import HeaderIndex from '../../Pages/Home/Header/HeaderIndex.vue';
-import SvgContent from '../../Pages/Svg/SvgContent';
+import FooterIndex from "../../Pages/Home/Footer/FooterIndex.vue";
+import HeaderIndex from "../../Pages/Home/Header/HeaderIndex.vue";
+import SvgContent from "../../Pages/Svg/SvgContent";
 
 export default {
     name: "HomeLayout",
-    components: { SvgContent,HeaderIndex, FooterIndex },
-
-}
+    components: { SvgContent, HeaderIndex, FooterIndex }
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
